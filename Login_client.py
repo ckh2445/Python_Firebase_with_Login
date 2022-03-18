@@ -19,6 +19,18 @@ client.connect(ADDR)
 ID = ""
 PW = ""
 
+stylesheet_Btn = ("background-color : whitesmoke;"
+            "border: 2px solid white;"
+            "color: white;"
+            "border-radius: 15px;")
+
+stylesheet_Back = ("background-color: pink;"
+                    "QAbstractScrollArea.background:white;")
+
+stylesheet_Label = ("border: 2px solid white;"
+                    "color: #5B2386;"
+                    "border-radius: 10px;")
+
 def send(msg):
 	message = msg.encode(FORMAT)
 	msg_length = len(message)
@@ -31,7 +43,7 @@ class game_Form(QWidget):
     def __init__(self):
         super().__init__()
         global ID,PW
-        self.setStyleSheet("background:white")
+        self.setStyleSheet(stylesheet_Back)
         self.setWindowTitle('game_Form')
         #self.resize(400,150)
         self.setFixedSize(400,180)
