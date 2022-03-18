@@ -11,7 +11,7 @@ import select
 PORT = 5050
 HEADER = 64
 SERVER = socket.gethostbyname(socket.gethostname())
-#SERVER = '203.232.193.169'
+#SERVER = "203.232.192.3"
 ADDR = (SERVER,PORT)
 FORMAT = 'utf-8'
 DISCONNECTED_MESSAGE = "!DISCONNECT"
@@ -19,7 +19,7 @@ DISCONNECTED_MESSAGE = "!DISCONNECT"
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind(ADDR)
 
-print(type(SERVER))
+print(SERVER)
 cred = credentials.Certificate("my.json")
 
 firebaseConfig  = { 'apiKey': "AIzaSyAWf5MiI8LzQdodfhwpGF-ZmRwshwJVaJU",
