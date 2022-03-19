@@ -11,7 +11,7 @@ import select
 PORT = 5050
 HEADER = 64
 SERVER = socket.gethostbyname(socket.gethostname())
-#SERVER = "203.232.192.3"
+
 ADDR = (SERVER,PORT)
 FORMAT = 'utf-8'
 DISCONNECTED_MESSAGE = "!DISCONNECT"
